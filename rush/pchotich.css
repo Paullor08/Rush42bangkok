@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 10%;
+  max-height: 450px;
+  background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.60));
+  background-position: center;
+  border-bottom: 2px solid white;
+}
+.navbar{
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0; 
+}
+.content{ 
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: aliceblue;
+}
+
+button{
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+}
+
+span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.4s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
+.name{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20%;
+}
+.name h1{
+  color: black;
+  font-weight: 900;
+}
+
+/* About part */
+
+.about{
+  margin:50px;
+  align-items: center;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  display: block;
+}
+.content-1{
+  margin: 30px;
+  /*border: 2px solid black;*/
+  height: 30%;
+  max-height: 1000px;
+  display: block;
+}
+.head{
+  /*border-bottom: 2px solid black;*/
+  padding: 2px;
+}
+.head a{
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+}
+.box{
+  /*border: 2px solid black;*/
+  margin: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.img{
+  margin: 5%;
+}
+.img img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+.info{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+.info a{
+  color: black;
+  font-weight: 600;
+  font-size: 100%;
+}
+
+/* Certificate part */
+
+.skill{
+  margin-top: 150px;
+}
+.content-2{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.certi{
+  margin: 10%
+}
+.certi img{
+  max-width: 100%;
+  margin: 5% 0;
+}
+
+/* Contact part */
+
+.contact{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.content-3{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info{
+  margin: 40px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.contact-info img{
+  max-width: 20px;
+
+}
+.contact-info div{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+}
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.2s; 
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
